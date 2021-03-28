@@ -1,0 +1,23 @@
+
+<div class='section-header'>
+<h1>Articles</h1>
+<%= link_to "New Article", new_article_path, class: 'article-btn' %>
+</div>
+
+
+<p>Our blog has <%= Article.public_count %> articles and counting!</p>
+
+
+<%# <p>Click the button to create a new article</p>
+<p>Click the button to see articles</p> %>
+
+
+  <% @articles.each do |article| %>
+    <% unless article.archived? %>
+      <h2>
+        <%= link_to article.title, article, class: 'article' %> 
+      </h2>
+    <% end %> 
+  <% end %>  
+
+

@@ -1,0 +1,136 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+  line-height: 1.8;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+  display: inline;
+  padding: 10px;
+}
+h2 a:hover {
+  color: purple;
+}
+.container {
+  margin: 0 auto;
+  width: 1070px;
+}
+header {
+  background-color: purple;
+  color: #fff;
+  padding: 1rem 0;
+}
+.logo {
+  font-size: 1.3rem;
+}
+main {
+  flex: 1;
+}
+p {
+  margin: 12px 0 12px;
+}
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.btn {
+  border: none;
+  color: #333;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #eee;
+  text-align: center;
+  border-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-primary {
+  background-color: #008cba;
+  color: white;
+}
+.btn-delete {
+  background-color: red;
+  color: #fff;
+}
+.btn-edit {
+  background-color: green;
+  color: #fff;
+}
+
+#article_status,
+#comment_status {
+  background-color: #e7e7e7;
+  border: 1px solid transparent;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+}
+
+.article-btn {
+  background-color: #008cba;
+  font-size: 16px;
+  padding: 12px 28px;
+  color: #fff;
+  border-radius: 4px;
+}
+footer {
+  padding: 1rem 0;
+  background: #333;
+  color: #fff;
+}
+.error {
+  color: red;
+}
+.mt-1 {
+  margin-top: 2rem;
+}
